@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ja">            
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>デイトレ中級編デザインカンプ中だよ</title>
+    
+		<!-- favicon -->
+    <link href="./images/favicon.ico" rel="icon" type="image/png">
+    
+    <!-- HTML5 Reset Stylesheet -->
+    <link rel="stylesheet" href="css/reset.css"> 
+    <!-- HTML5 Reset Stylesheet でリセットし切れないスタイルをcustom_reset.cssで定義-->
+   
+    <link rel="stylesheet" href="css/custom_reset.css">
+ 
+     <!-- swiperのリンク -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+       <!-- wow!のリンク -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- 具体的なスタイルをstyle.cssに記述 -->
+             <link rel="stylesheet" href="css/style.css">
+
+  </head>
+<body>
+  <!-- ヘッダー（ロゴとメインビジュアル） -->
+  <header class="page-header">
+           <nav class="page-header-wrap ">  <p class="page-header__logo"><a href=""><img src="images/logo@2x.png" alt=""></a></p>
+      <div class="page-header__list">       
+        <ul class="page-header__list-menu">
+        <li><a  class="menu-link " href="#news">News</a></li>
+        <li><a  class="menu-link" href="#access">Access</a></li>
+        <li><a  class="menu-link" href="#price">Price</a></li>
+          <li><a  class="menu-link" href="#contact">Contact</a></li> 
+        </ul>
+      </div>        
+      
+    </nav>
+
+     </header>
+
+         <div class="page-header__hamburger hidden-pc hidden-tab  ">
+        <div class="page-header__icons">
+        <div class="page-header__icon2"></div>
+          <div class="page-header__icon1"></div>
+          <div class="page-header__icon3"></div>
+
+      </div>
+
+      </div>
+            <!-- page-header__hamburgergarがクリックされた時に表示されるcss -->
+        <div class="hamburger__background" ></div> 
+        <!-- 表示時のコンテンツの中身 -->
+        <div class="hamburger__items">
+          <div class="hamburger__item"><a  class="menu-link " href="#news">News</a></div>
+          <div class="hamburger__item"><a  class="menu-link" href="#price">Price</a></div>
+            <div class="hamburger__item"><a  class="menu-link"  href="#card">Card</a></div>
+          <div class="hamburger__item"><a  class="menu-link" href="#access">Access</a></div>
+          <div class="hamburger__item"><a  class="menu-link" href="#contact">Contact</a></div>
+            
+        </div>
+
+ 
+
+    <!-- //swiperの設定 -->
+    <!-- Slider main container -->
+    <div class="swiper-container">
+       <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <!-- <div class="swiper-slide"><a  href="" class="mainvisual__prev"></a></div>
+        <div class="swiper-slide"><a  href="" class="mainvisual__next"></a></div> -->
+          <div class="swiper-slide">
+          <div class="mainvisual">
+            <div class="mainvisual__inner">
+                 <h2 class="mainvisual__title typo-bold"><span class="">一番伝えたい<br class="hidden-tab hidden-pc">ことを書く2</span></h2>
+              <p class="mainvisual__campaign typo-bold"> リードリードリード</p>
+              <p class=" mainvisual__button"><a href="#contact" class="primary-button button-mainvisual  typo-bold">お問い合わせ</a></p>
+            </div>
+          </div> <!-- <div><a  href="" class="mainvisual__next">  </a> </div> -->
+         </div> 
+         <div class="swiper-slide">
+          <div class="mainvisual">
+            <div class="mainvisual__inner">
+              <h2 class="mainvisual__title typo-bold"><span class="">一番伝えたい<br class="hidden-tab hidden-pc">ことを書く2</span></h2>
+              <p class="mainvisual__campaign typo-bold"> リードリードリード</p>
+              <p class=" mainvisual__button"><a href="#contact" class="primary-button button-mainvisual  typo-bold">お問い合わせ</a></p>
+            </div>
+          </div> <!-- <div><a  href="" class="mainvisual__next">  </a> </div> -->
+         </div>  <div class="swiper-slide">
+          <div class="mainvisual">
+            <div class="mainvisual__inner">
+              <h2 class="mainvisual__title typo-bold"><span class="">一番伝えたい<br class="hidden-tab hidden-pc">ことを書く3</span></h2>
+              <p class="mainvisual__campaign typo-bold"> リードリードリード</p>
+              <p class=" mainvisual__button"><a href="#contact" class="primary-button button-mainvisual  typo-bold">お問い合わせ</a></p>
+            </div>
+          </div> <!-- <div><a  href="" class="mainvisual__next">  </a> </div> -->
+         </div> 
+        
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+
+<!-- お客様の声 -->
+<section id="card" class="section">
+  <div class="inner card__inner">
+    <h2 class="section__title typo-bold card__title"><span>Card</span></h2>
+    <div class="voice card__items">
+      <!-- 理想はcard__itemsに対し、card__itemとその配下にaタグを配置する。 -->
+      <ul class="voice-list card__item wow slideInLeft">
+        <li class="voice-list__item voice-block card__list">
+        
+          <p class="first__img card__list-fisrt"><img src="images/card-img.svg" alt="自動分析機能のアイコン"></p>               
+          <!-- ここもdタグで囲っておいた方がよかったかも -->
+          <div class="item-wrap">
+            <p class="voice-list__item__title item-wrap__title">タイトル</p>
+                   <p class="voice-list__item__text item-wrap__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+          </div>
+
+          
+        </li>
+      </ul>
+      <ul class="voice-list  wow fadeInUp">
+        <li class="voice-list__item voice-block  ">
+          <!-- <div class="media__img"><img src="images/card-img.svg" alt=""></div> -->
+          <p class="first__img"><img src="images/card-img.svg" alt="自動分析機能のアイコン"></p>
+          <div>
+
+            <p class="voice-list__item__title">タイトル</p>
+            <p class="voice-list__item__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            
+          </div>
+        </li>
+      </ul>
+      <ul class="voice-list wow bounceIn">
+        <li class="voice-list__item voice-block">
+          <p class="first__img"><img src="images/card-img.svg" alt="自動分析機能のアイコン"></p>            <p class="voice-list__item__title">タイトル</p>
+          <p class="voice-list__item__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </li>
+      </ul>
+      <ul class="voice-list wow bounceIn">
+        <li class="voice-list__item voice-block">
+          <p class="first__img"><img src="images/card-img.svg" alt="自動分析機能のアイコン"></p>            <p class="voice-list__item__title">タイトル</p>
+          <p class="voice-list__item__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </li>
+      </ul>
+      <ul class="voice-list wow fadeInUpBig" data-wow-iteration="3">
+        <li class="voice-list__item voice-block">
+          <p class="first__img"><img src="images/card-img.svg" alt="自動分析機能のアイコン"></p>            <p class="voice-list__item__title">タイトル</p>
+          <p class="voice-list__item__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+        </li>
+      </ul>
+      <ul class="voice-list wow fadeInUpBig" data-wow-duration="3s">
+        <li class="voice-list__item voice-block">
+          <p class="first__img"><img src="images/card-img.svg" alt="自動分析機能のアイコン"></p>            <p class="voice-list__item__title">タイトル</p>
+          <p class="voice-list__item__text">テキストテキストテキストテキストテキストテキストテキストテキスト キストテキスト</p>
+        </li>
+      </ul>
+      
+
+    </div> <!-- voice終わり -->
+  </div>
+</section>
+<!-- お客様の声 -->
+
+
+    <!-- 最新情報 -->
+    <!-- 模範解答では、divの下にnews__items>news__item>infoときて、infoでflexとしている。可読性が高いようにdivで囲む癖をつけること -->
+    <section id="news" class="section">
+      <div class="container news-container">
+        <h2 class="section__title typo-bold"><span>News</span></h2>
+        <div class="news-list news-list__first">
+          <div class="news-list__meta">
+            <time datetime="2019-08-08">2019-08-08</time>
+            <a href="" class="neww-list__meta__label1">ラベル１</a>
+          </div>
+          <p class="news-list__title">   <a href="">あかさたなあかさたなあかさたなあかさたなあかさたなあかさたなあかさたなあかさたな</a> </p>
+         </div>
+
+        <div class="news-list">
+          <div class="news-list__meta">
+            <time datetime="2019-08-08">2019-08-08</time>
+            <a href="" class="neww-list__meta__label2">ラベル2</a>
+          </div>
+          <p class="news-list__title">   <a href="">あかさたなあかさたなあかさたなあかさたなあかさたなあかさたなあかさたなあかさたな</a> </p>
+         </div>
+      
+        <div class="news-list">
+          <div class="news-list__meta">
+            <time datetime="2019-08-08">2019-08-08</time>
+            <a href="" class="neww-list__meta__label3">ラベル3</a>
+          </div>
+          <p class="news-list__title">   <a href="">あかさたなあかさたなあかさたなあかさたなあかさたなあかさたなあかさたなあかさたな</a> </p>
+         </div>
+      
+        <div class="news-list">
+          <div class="news-list__meta">
+            <time datetime="2019-08-08">2019-08-08</time>
+            <a href="" class="neww-list__meta__label1">ラベル1</a>
+          </div>
+          <p class="news-list__title">   <a href="">あかさたなあかさたなあかさたなあかさたなあかさたなあかさたなあかさたなあかさたな</a> </p>
+         </div>
+      
+        <div class="news-list">
+          <div class="news-list__meta">
+            <time datetime="2019-08-08">2019-08-08</time>
+            <a href="" class="neww-list__meta__label1">ラベル1</a>
+          </div>
+          <p class="news-list__title">   <a href="">あかさたなあかさたなあかさたなあかさたなあかさたなあかさたなあかさたなあかさたな</a> </p>
+         </div>
+      
+        <!-- <ul class="news-list">         
+
+
+          <li class="news-list__item"><div></div><time datetime="2019-08-23"><a href="#">ラベル１</a>2019.08.23</time><span>新料金プラン「Mania 5」をリリースしました</span></li>
+          
+          
+          <li class="news-list__item"><time datetime="2019-08-23"><a href="#">ラベル１</a>2019.08.23</time><span>新料金プラン「Mania 5」をリリースしました</span></li>
+          <li class="news-list__item"><a href="#"><time datetime="2019-08-08">2019.08.08</time><span>Android OS版のアプリケーションにおける決済機能の不具合について</span></a></li>
+          <li class="news-list__item"><a href="#"><time datetime="2019-07-14">2019.07.14</time><span>関東テレビの情報番組「サックリ！」にData Mania代表の石渡が出演します</span></a></li>
+        </ul> -->
+        <p class="news-page-link"><a href="#" class="typo-bold">more</a></p>
+      </div>
+    </section>
+    <!-- 最新情報 -->
+
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    
+
+    <!-- 価格 -->
+    <!--table_items の下に、table__itemをならべ、フレックスにする。 -->
+    <section id="price" class="section">
+      <div class="inner">
+        <h2 class="section__title typo-bold"><span>Price</span></h2>
+        <div class="price__items">
+          <div class="price__item__img">
+            <img src="images/price-img@2x.png" alt="値段の写真">
+          </div>
+          <div class="price__item__table">
+            <div class="table__wrap">
+              <table class="table__list">
+                <tr>
+                  <th></th>                  <th>colomn1</th>                  <th>colomn2</th>
+                </tr>
+                <tr>
+                  <td>row1</td>                  <td>100円</td>                  <td>100円</td>
+                </tr>
+                <tr>
+                  <td>row2</td>                  <td>6,000円</td>                  <td>0円</td>
+                </tr>
+                <tr>
+                  <td>row3</td>                  <td class="is-h"> <strong class="is-a">6,000円</strong> <span>今だけ半額 </span></td>                  <td>0円</td>
+                </tr>
+                <tr>
+                  <td>row4</td>                  <td>100円</td>                  <td>100円</td>
+                </tr>
+            
+
+              </table>
+
+            </div>
+
+            <p class="price__meta__comment">※目安なので詳しくは<a href="">お問い合わせ</a>ください</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- サービスの特長 -->
+
+
+  
+    <section id="access" class="section">
+      <div class="inner">
+        <h2 class="section__title typo-bold"><span>Access</span></h2>
+        <div class="sub__inner">
+
+          <div class="map-item">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26098.43620530135!2d137.0300539706543!3d35.14902531934534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1618524005805!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="map-info"> 
+            <p>住所</p>
+            <p>ほげほげほげのほげの場所</p>
+          </div>
+          <div class="map-info"> 
+            <p>アクセス</p>
+            <p>〇〇駅から右に５分</p>
+          </div>
+          <p class=" "><a href="" class="primary-button  header__button typo-bold map__button">Googleマップで見る</a></p>
+        </div>  <!-- //map__inner 終わり -->
+      </div> <!-- //inner 終わり -->
+    </section>
+
+  <!--　よくある質問 -->
+     <section id="qa" class="qa section">
+      <div class="qa__inner">
+        <h2 class="section__title typo-bold"><span>Q & A</span></h2>
+       <div class="qa__items">
+
+         <div class="qa__item accordion">
+           <div class="accordion__head">クリックするとどうなりますか？<span class="accordion__icon"></span></div>
+           <dd class="accordion__body">
+             <div class="accordion__body-in">アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</div><!-- /.accordion__body-in -->
+           </dd>
+         </div>
+         <div class="qa__item accordion">
+           <dt class="accordion__head">クリックするとどうなりますか？<span class="accordion__icon"></span></dt>
+           <dd class="accordion__body">
+             <div class="accordion__body-in">アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</div><!-- /.accordion__body-in -->
+           </dd>
+         </div>
+         <div class="qa__item accordion">
+           <dt class="accordion__head">クリックするとどうなりますか？<span class="accordion__icon"></span></dt>
+           <dd class="accordion__body">
+             <div class="accordion__body-in">アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</div><!-- /.accordion__body-in -->
+           </dd>
+         </div>   
+
+       </div> <!--　qa__items終わり -->
+
+        
+      </div> <!--　qa__inner終わり -->
+
+    </section>
+    <!-- qa -->
+
+    <!-- お問い合わせ -->
+    <!-- 回答講義では、それぞれの項目をdivで囲み、さらにinputとlabelもdivで囲んだうえで、
+    inputとlabelをidとforで紐づけしている。 -->
+     <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section__title typo-bold"><span>Contact</span></h2>
+        <div class="sub__inner contact__inner">
+            <form action="#" method="POST" class="contact-form">
+              <label for="text" class="form-parts">
+                <span class="form-parts__label typo-bold" >お名前</span>
+                <input   id="text"  type="text" name="your-name"  placeholder="山田　太郎">
+              </label>
+              <label for="emeil" class="form-parts">
+                <span class="form-parts__label typo-bold">メールアドレス</span>
+                <input  id="email" type="email" name="your-email"  placeholder="hoge@gmail.com"> 
+              </label>
+              <label class="form-parts">
+                <span class="form-parts__label typo-bold">お問い合わせ種別</span>
+                <span class="select-wrapper">
+                  <select name="subject">
+                    <option value="選択肢1">ーーー</option>
+                    <option value="選択肢1">選択肢1</option>
+                    <option value="選択肢2">選択肢2</option>
+                    <option value="選択肢3">選択肢3</option>
+                    <option value="選択肢4">選択肢4</option>
+                    <option value="選択肢5">選択肢5</option>
+                  </select>
+                </span>
+              </label>
+              <label class="form-parts">
+                <span class="form-parts__label  form-parts_other typo-bold">お問い合わせ内容</span>
+                <textarea name="body"  placeholder="お問い合わせを入力してください"></textarea>
+              </label>
+              
+              <div class="contact__radio">
+
+                <!-- <input type="radio" name="fruits" value="1" id="apple">アップル
+                <input type="radio" name="fruits" value="2" id="apple">アップル
+                <input type="radio" name="fruits" value="3" id="apple">アップル -->
+               <p class="radio__item"> <input type="radio" name="fruits" value="1" id="apple"><label for="apple">アップル</label> </p>
+               <p class="radio__item"> <input type="radio" name="fruits" value="2" id="orange"><label for="orange">オレンジ</label></p>
+               <p class="radio__item"> <input type="radio" name="fruits" value="3" id="strawberry"><label for="strawberry">いちご</label></p> 
+
+
+              </div>
+              <div class="form_privacy">
+                <input type="checkbox" id="privacy_input"> <label for="privacy_input" > <span> <a href=""  class="js-modal-open">プライバシーポリシー</a> に合意する</span></label>
+              </div>
+              <div>
+                <a type="submit" class=" primary-button  header__button typo-bold map__button  contact-form__send-button" href="#">送信</a>
+
+              </div>
+            </form>
+        </div>
+      </div>
+    </section>
+    <!-- お問い合わせ -->
+
+    <!-- プライバシーリンク用のモーダル -->
+    <!-- <div id="modal" class="modal"> -->
+      <div class="modal__inner">
+        <div class="modal__icon"> <a class="modal__icon-a" href=""> <img  class="modal__icon" src="../images/btn-batsu.svg" alt=""></a>  </div>
+        <h2 class="section__title typo-bold modal__title"><span>プライバシーポリシー</span></h2>
+        <div class="modal__items">
+          <div class="modal__box">
+            <div class="box__title">ほにゃらら</div>
+            <div class="box__article">ほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃらら。</div>
+          </div>
+          <div class="modal__box">
+            <div class="box__title">ほにゃらら</div>
+            <div class="box__article">ほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃらら。</div>
+          </div>
+          <div class="modal__box">
+            <div class="box__title">ほにゃらら</div>
+            <div class="box__article">ほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃらら。</div>
+          </div>
+          <div class="modal__box">
+            <div class="box__title">ほにゃらら</div>
+            <div class="box__article">ほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃららほにゃらら。</div>
+          </div>
+        </div>  <!--modal__items -->
+       <p class=" mainvisual__button modal__button"><a href="" class="primary-button button-mainvisual  typo-bold modal__button-a">閉じる</a></p>          
+    
+   
+       </div>  <!-- modal__inner -->
+    <!-- </div >     modal -->
+<div class="modal__background"></div>
+  
+  <!-- フッター -->
+  <footer id="footer" class="footer">
+    <div class="footer__inner">
+      <div class="footer__items">
+        <div class="footer__logo"><img src="images/logo@2x.png" alt=""></a></div>
+        <div class="footer__nav">
+          <ul class="">
+            <li ><a href="#news">Card</a></li>
+            <li><a href="#feature">News</a></li>
+            <li><a href="#advantage">Price</a></li>
+            <li><a href="#client-voice">Access</a></li>
+            <li><a  href="#client-voice">Contact</a></li> 
+          </ul>
+
+        </div>
+        <div class="footer__link">
+          <a href="" class="twetter"><img src="../images/twitter.svg" alt=""></a>
+          <a href="" class="facebook"><img src="../images/facebook.svg" alt=""></a>
+          <a href="" class="instgram"><img src="../images/instagram.svg" alt=""></a></a>
+        </div>
+      </div>
+    <p class="footer__address">住所：ほげほげのほげほげ</p>
+    <p class="footer__tel">TEL：0000-00-0000</p>
+    </div>
+    <div class="footer__totop"> <a  href="#">  <img src="../images/totop.svg" alt=""> </a>  </div>   <!-- トップへ戻るのリンクボタン --> 
+    <div class="footer__end">Copyright © 2020 デイトラ All rights reserved.</div> 
+  </footer>
+
+  <!-- フッター -->
+   <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  <!-- スライダープラグインのswiperへのリンク -->
+ 
+  <script src="../js/wow.min.js"></script>
+  <!-- <script src="../js/wow.js"></script> -->
+         <script src="../js/jquery_action.js"></script>  <!-- ホバーへのリンク -->
+
+<!-- jsで書いているので、コメントアウト
+  <script>
+    new WOW().init();
+   </script> -->
+
+</body>
+</html>
+
+
+
+
